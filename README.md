@@ -4,7 +4,7 @@ This is a website dedicated to create an interactive experience for people who a
 
 ## Goals
 
-* **Accessibility**
+* **Accessibility: Index Page**
   * _**Color Contrast**_
     
     For people with color vision deficiency to access visual art resources, a button on this website can adjust the color contrast of texts and layouts
@@ -18,13 +18,29 @@ This is a website dedicated to create an interactive experience for people who a
     For Blind people and people with low vision, a button on this website can enable text-to-audio function to read the options and tabs out loud
     
 
-* **Mini Search Engine for Artistic Inspiration**
-  * Google Custom Search
+* **Gallery 1 Multimedia & Resources**
+  * Spotify API
+  * Google Art and Culture | Art Palette (credit: https://artsexperiments.withgoogle.com/artpalette/)
+  * Art Style Transfer | Deep Learning (credit: https://yining1023.github.io/fast_style_transfer_in_ML5/)
 
 
-* **Interactive Storyboard Building**
-  * Vue Form
-  * Firebase
+* **Gallery 2 A Sample Storyboard**
+  * Vue-Bootstrap
+    -Card to pin art resource and captions
+    -NavBar for navigation 
+    -Pagination (Because there is no real backend server, a function in Vue component is used to display 3 artifacts in each page)
+  * Vue components for rendering data from a json file
+
+* **Gallery 3 Gabby Zhou's Gallery**
+  * Basic Vue component for Artworks display
+  * FireBase 
+    ** Rendering data from user input in comment section
+  * Data visualization in comment section
+    ** Generate top 3 artworks and display images from Firebase Storage
+
+* **Gallery 4 User's stodyboard**
+  * Login page 
+  * Authentication (not included)
 
 ## Author
 ### _Gabby Zhou_

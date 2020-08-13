@@ -1,0 +1,42 @@
+[
+    {
+      "name": "The Great Wave off Kanagawa [神奈川沖浪裏]",
+      "id": 1,
+      "medium":"Print",
+      "artist": "Katsushika Hokusai" ,
+      "year": "c. 1829–1833",
+      "region": "Japan"
+    },
+    {
+      "name": "Pacific Coral Reef",
+      "id": 2,
+      "medium": "Video",
+      "artist": "Gabby Zhou",
+      "year": "2019",
+      "region": "Florida, US"
+    },
+    {
+      "name": "West Coast Blues",
+      "id": 3,
+      "medium": "Audio [Jazz]",
+      "artist": "Wes Montgomery",
+      "year": "1960",
+      "region": "US"
+    },
+    {
+      "name": "Washed Ashore.org [Art to Save the Sea]",
+      "id": 4,
+      "medium" : "Art Organization Webpage",
+      "artist": "",
+      "year": "Retrieved August 2020",
+      "region": "Florida, US"
+    },
+    {
+      "name": "Placeholder",
+      "id": 5
+    },
+    {
+      "name": "Placeholder",
+      "id": 6
+    }
+  ]
