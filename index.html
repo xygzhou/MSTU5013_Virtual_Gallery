@@ -16,38 +16,99 @@
 		<div class="box-1">
 			<h1>Welcome to <b> Gabby's Virtual Gallery</b></h1>
 			<p><b><big>Here</big></b> you can find inspiration of <b><big>art</big></b> and <b><big>storytelling</big></b></p>
-			<p> <small>This is an accessible website features text-to-audio and font adjustment buttons</p>
+			<p> <small>This is an accessible website features adjustment buttons</p>
 		</div>
 
 		<div class="box-2">
 			<h1>Assistive Buttons</h1>
-			
+
 			<div class="block">
 				<h3>Color Contrast</h3>
-				<p>reserved space reserved space reserved space reserved space reserved space reserved space reserved space
+				<p>reserved space reserved space reserved space reserved space reserved space reserved space reserved space reserved space reserved space
 				</p>
+			</div>
+
+			<div class="block">
+				<h3>Font Adjustment</h3>
+				<div id="app">
+					<div id="body" v-bind:style="{ fontSize: computedFont }" ></div>
+					<a class="button" v-on:click="changeFontBigger()">
+						Increase font size
+					</a>
+					&nbsp;&nbsp;&nbsp;
+					<a class="button" v-on:click="changeFontSmaller()">
+						Decrease font size
+					</a>
+				  
+					<p v-bind:style="{ fontSize: fontSize + 'px' }">
+						Font size is: {{ computedFont }}
+					</p>
+				</div>
+				</p>
+			</div>
+		
+			<!-- <div class="block">
+				<h3>Color Contrast</h3>
+				<div id="app" class="container"> 
+					<button v-on:click="updateColor">
+					Color on a white background
+				  </button>
+				  <p></p>
+				  <button v-on:click="fontSize--"> 
+					Neutral on a colored background
+				  </button>
+
+				  <div id="app" v-bind:style="{ backgroundColor: color}">
+				  <h4>Try a color</h4>
+  					<div class="color">
+				 		<input type="text" v-bind:style="{ color: color}" v-model="color" maxlength="7" placeholder="#000000"/>
+  						<input type="color" v-model="color"/>
+    				</div>
+				</div>
+				
+				</div>
 			</div>
 			<div class="block">
 				<h3>Font Adjustment</h3>
-				<p>reserved space reserved space reserved space reserved space reserved space reserved space reserved space
+				<div id="app" class="container">
+					<button v-on:click="fontSize++">
+					Increase font size
+				  </button>
+				  <p></p>
+				  <button v-on:click="fontSize--">
+					Decrease font size
+				  </button>
+				  
+				  <p v-bind:style="{ fontSize: fontSize + 'px' }">
+					Font size is: {{ fontSize }}
+				  </p>
+				  </div>
 				</p>
-			</div>
+			</div> -->
 			<div class="block">
 				<h3>Text-to-Audio</h3>
 				<p>reserved space reserved space reserved space reserved space reserved space reserved space reserved space
 				</p>
 			</div>
 			<hr>
-			<a class="button" href="">Read More</a>
+			<a class="button" href="https://www.w3.org/standards/webdesign/accessibility" target="_blank">Read More</a>
 		</div>
 
 		<div class="categories">
 			<h2>Categories</h2>
 			<ul>
-				<li><a href="Gallery1.html" target="_blank"><h3>Gallery 1 Portrait</h3></a></li>
-				<li><a href="dir1/Gallery2.html" target="_blank"><h3>Gallery 2 Nature</h3></a></li>
-				<li><a href="Gallery3.html" target="_blank"><h3>Gallery 3 Interaction</h3></a></li>
-				<li><a href="Gallery3.html" target="_blank"><h3>Gallery 4 Interaction</h3></a></li>
+				<!-- 
+					Homepage: using Vue.js to make assistive buttons and functional components, firebase to add user info data
+					Gallery 1: using Artsy API, choose color and search artworks
+					Gallery 2: using Bootstrap
+					Gallery 3: my art blog, using Firebase to store comment data and Vue.js for simple data visualization
+					Gallery 4: allowing user to build their own storyboard (vue.js + firebase)
+				-->
+
+				<li><a href="Gallery1.html" target="_blank"><h3>Gallery I: Multimedia Studio</h3></a></li>
+				<li><a href="dir1/Gallery2.html" target="_blank"><h3>Gallery II: Ocean Theme, <i>a sample storyboard</i></h3></a></li>
+				<li><a href="Gallery3.html" target="_blank"><h3>Gallery III: Gabby Zhou Artworks</h3></a></li>
+				<li><a href="Gallery4.html" target="_blank"><h3>Gallery IV: My Storyboard</h3></a></li>
 			</ul>
 		</div>
 
@@ -67,7 +128,7 @@
 			<input class="button" type="submit" value="Submit" name="">
 		</form>
 
-		<div class="block">
+		<!-- <div class="block">
 			<h3>Color Contrast</h3>
 			<p>reserved space reserved space reserved space reserved space reserved space reserved space reserved space reserved space reserved space
 			</p>
@@ -81,7 +142,7 @@
 			<h3>Text-to-Audio</h3>
 			<p>reserved space reserved space reserved space reserved space reserved space reserved space reserved space reserved space reserved space
 			</p>
-		</div>
+		</div> -->
 
 		<div class="clr"></div>
 
@@ -122,5 +183,9 @@
 	<a class="fix-me button" href="">Hello</a>
 
 	<div style="margin-top:500px;"></div>
+
+	<script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
+	<script src="buttons.js"></script>
+
 </body>
 </html>

@@ -1,3 +1,115 @@
+// heavy labor coding for firebase
+const artworks = document.querySelector('#artworks');
+const form = document.querySelector('#add-comment-form');
+const comments = document.querySelector('#user-comments');
+
+
+function renderArt(element) {
+    let li = document.createElement('li');
+    let artist = document.createElement('span');
+    let classification = document.createElement('span');
+    let medium = document.createElement('span');
+    let name = document.createElement('span');
+    let year = document.createElement('span');
+    let index = document.createElement('span');
+
+    li.setAttribute('data-id', element.id);
+    artist.textContent = 'Artist: ' + element.data().artist;
+    classification.textContent = 'Classification: ' + element.data().classification;
+    medium.textContent = 'Medium: ' + element.data().medium;
+    name.textContent = element.data().index + '. ' + element.data().name;
+    year.textContent = 'Year: ' +  element.data().year;
+
+    li.appendChild(name);
+    li.appendChild(artist);
+    li.appendChild(classification);
+    li.appendChild(medium);
+    li.appendChild(year);
+
+    artworks.appendChild(li);
+}
+
+function renderComment(element) {
+    let li = document.createElement('li');
+    let comment = document.createElement('span');
+    let index = document.createElement('span');
+    let nickname = document.createElement('span');
+    let rating = document.createElement('span');
+    //delete comment
+    let cross = document.createElement('div');
+
+    li.setAttribute('data-id', element.id);
+    nickname.textContent = element.data().nickname;
+    index.textContent = 'Painting No.' + element.data().index;
+    rating.textContent = 'Rating: ' + element.data().rating;
+    comment.textContent = '"' + element.data().comment + '"';
+    //delete commet
+    cross.textContent = 'x';
+
+    li.appendChild(nickname);
+    li.appendChild(index);
+    li.appendChild(rating);
+    li.appendChild(comment);
+    li.appendChild(cross);
+
+    comments.appendChild(li);
+
+    // deleting data
+    cross.addEventListener('click', (e) => {
+        e.stopPropagation();
+        let id = e.target.parentElement.getAttribute('data-id');
+        db.collection('comments').doc(id).delete();
+    } )
+}
+
+// getting artworks data
+db.collection('portfolio').orderBy('index').get().then((snapshot) => {
+    snapshot.docs.forEach(element => {
+        // console.log(element.data()) 
+        renderArt(element);
+    });
+})
+
+// getting comments data
+// db.collection('comments').orderBy('index').get().then((snapshot) => {
+//     snapshot.docs.forEach(element => {
+//         renderComment(element);
+//     });
+// })
+
+// saving data
+form.addEventListener('submit', (evt) => {
+    evt.preventDefault();
+    db.collection('comments').add({
+        nickname: form.name.value,
+        rating: form.rating.value,
+        index: form.index.value,
+        comment: form.comment.value
+    });
+    form.name.value = '';
+    form.rating.value = '';
+    form.index.value = '';
+    form.comment.value = '';
+    
+});
+
+// getting real-time data by listener
+db.collection('comments').orderBy('index').onSnapshot(snapshot => {
+    let changes = snapshot.docChanges();
+    changes.forEach(change => {
+        if(change.type == 'added'){
+            renderComment(change.doc);
+        } else if (change.type == 'removed'){
+            let li = comments.querySelector('[data-id=' + change.doc.id + ']');
+            comments.removeChild(li);
+        }
+        // console.log(change.doc.data())
+    })
+})
+
+
+
+
 // This is my first javascript code practice
 
 // console.log("Hello World");

@@ -6,53 +6,98 @@
     <meta charset="UTF-8">
     <meta name="description" content="This is an my first website">
     <title>Gabby's Virtual Gallery 1</title>
+
+    <link rel="stylesheet" type="text/css" href="css/gallery1_style.css">
   </head>
 
   <body>
-    <p>Welcome to <b><i>Gabby's Gallery 1</i></b></p>
+    <div id="app" class="container">
+      <div class = 'welcome'>
+        <p>Welcome to <b><i>Gabby's Interactive Gallery 1</i></b></p>
+      </div>
     
-    <h2>Portrait Gallery</h2>
-    <hr/>
-        <p>Here you can find inspiration of animal and human figure portraits</p> <!--p is a paragraph-->
-        <hr/>
-    <!-- link an image -->
-    <!--click the cat picture will lead to the dog picture-->
-    <a href="https://post.medicalnewstoday.com/wp-content/uploads/sites/3/2020/02/322868_1100-800x825.jpg">
-      <img width="406" height="304" src="https://dcist.com/wp-content/uploads/sites/3/2020/02/wilford_newsletter-1024x768.jpg" alt="a kitten" />
-    </a> 
-    
-    <p>
-    <!--block display and inline display
-    next to each other
-    <a href="#">link1</a>
-    <a href="#">link2</a>
-    <a href="#">link3</a>
-    </p>
+        <h5>Gabby Zhou's Multimedia Studio</h5>
 
-    each has one paragraph
-    <p>paragraph1</p>
-    <p>paragraph2</p>
+      <div class = "content">
+        <h2>Music & Art Medley</h2>
+        <div class="wrapper">
+          <hr/>
+            <p><h1>reserved space for explanation</h1></p> <!--p is a paragraph-->
+            
+          <hr/>
+        </div>
+        <a><img class="resize" src="images/Giovanni_Battista_Gaulli-Triumph_of_the_Name_of_Jesus.jpg"></a>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a><img class="resize" src="images/Kitao_Shigemasa-Actor_actors_Ichikawa_Yaozo_Ukiyo-e.jpg"></a>
+        <a><img class="resize" src="images/Frida_Kahlo_self-portrait-as-a-tehuana.jpg"></a>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a><img class="resize" src="images/Basquiat-Cabeza.jpg"></a>
 
-    <span>span1</span>
-    <span>span2</span>
-
-    <hr>
-
-    <div>div1</div>
-    <div>div2</div>
-
-    -->
-
-    <!--layout-->
-      <header>
-        <nav>
+      </div>
+          <!-- link an image -->
+          <!--click the cat picture will lead to the dog picture-->
+          <!-- <a href="https://post.medicalnewstoday.com/wp-content/uploads/sites/3/2020/02/322868_1100-800x825.jpg">
+            <img width="406" height="304" src="https://dcist.com/wp-content/uploads/sites/3/2020/02/wilford_newsletter-1024x768.jpg" alt="a kitten" />
+          </a> 
           
-        </nav>
+          <p> -->
+          <!--block display and inline display
+          next to each other
+          <a href="#">link1</a>
+          <a href="#">link2</a>
+          <a href="#">link3</a>
+          </p>
+
+          each has one paragraph
+          <p>paragraph1</p>
+          <p>paragraph2</p>
+
+          <span>span1</span>
+          <span>span2</span>
+
+          <hr>
+
+          <div>div1</div>
+          <div>div2</div>
+
+          -->
+
+      <!--layout-->
+      <header>
       </header>
     
       <main>
         <article>
+
+        
+        <hr>
+
+
           <section>
+            <div class = "content">
+              <h2>Color Palette Experiment</h2>
+              <hr/>
+              <div class="wrapper">
+                  <p><h1>Choose a combination of color on your palette and see the art artifacts resembles your palette.</h1></p> <!--p is a paragraph-->
+              <hr/>
+              </div>
+                  <a href="https://artsexperiments.withgoogle.com/artpalette/" target="_blank"><img src="images/titlepalette.png"></a>
+            </div>
+
+            <hr/>
+
+            <div class = "content">
+              <h2>Art Style Transfer</h2>
+              <hr/>
+                <div class="wrapper">
+                    <p><h1>Please upload 2 pictures of art and see the effect of art style transformation by deep learning.</h1></p> <!--p is a paragraph-->
+                
+                </div>
+                  <p>Credit: Yining Shi. View code at <a href="https://github.com/yining1023/fast_style_transfer_in_ML5/">GitHub</a></p>
+              <hr/>
+              <iframe src="https://yining1023.github.io/fast_style_transfer_in_ML5/" frameborder="0" width="950" height="800">Frida Kahlo</iframe>
+            </div>
+    
             <aside>
               <!--shown to the users but not related to the main content-->
             </aside>
@@ -64,16 +109,10 @@
           
       </footer>
      
-    <!--link to erl addresses-->
-    <a href="https://www.louvre.fr/sites/default/files/medias/medias_images/images/louvre-portrait-de-lisa-gherardini-epouse-de-francesco-del-giocondo-dite-monna-lisa-la-gioconda-ou-la-jocon.jpg" target="_blank"><h3>Mona Lisa</h3></a>
+      <!--link to url addresses-->
+      <!-- <a href="https://www.louvre.fr/sites/default/files/medias/medias_images/images/louvre-portrait-de-lisa-gherardini-epouse-de-francesco-del-giocondo-dite-monna-lisa-la-gioconda-ou-la-jocon.jpg" target="_blank"><h3>Mona Lisa</h3></a> -->
 
-    <hr>
-
-        <h3><p style="color:white; background-color:#78C7C7"> <big>Frida Kahlo</big></p></h3>
-
-        <iframe src="https://www.fridakahlo.org/" frameborder="0" width="1000" height="800">Frida Kahlo</iframe>
-
-    
+  </div>
   </body>
   
 </html>

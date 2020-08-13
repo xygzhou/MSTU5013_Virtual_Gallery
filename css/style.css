@@ -8,13 +8,10 @@
 body{
 	background-color:#f4f4f4;
 	color:#3B9C9C;
-
 	font-family: Arial, Helvetica, sans-serif;
-	font-size:16px;
+	font-size:16px; 
 	font-weight:normal;
-	/* Same as above */
-	font: normal 16px Arial, Helvetica, sans-serif;
-
+	/* font: normal 16px Arial, Helvetica, sans-serif; */
 	line-height:1.6em;
 	margin:0;
 }
@@ -30,10 +27,6 @@ a:hover{
 
 a:active{
 	color:green;
-}
-
-a:visited{
-	
 }
 
 .container{
@@ -197,4 +190,3 @@ a:visited{
 .my-list li:nth-child(even){
 	background: #D3D3D3;
 }
-

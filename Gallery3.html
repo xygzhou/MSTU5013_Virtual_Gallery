@@ -6,16 +6,106 @@
     <meta charset="UTF-8">
     <meta name="description" content="This is an my first website">
     <title>Gabby's Virtual Gallery 3</title>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-firestore.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="css/gallery3_style.css">
   </head>
 
   <body>
-  	<p>Welcome to <b><i>Gabby's Gallery 3</i></b></p>
+    <!-- <h1>Cloud Cafe</h1>
+
+    <div class="content">
+
+        <form id="add-cafe-form"></form>
+
+        where we want to input data 
+        <ul id="cafe-list"></ul>  
+
+    </div> -->
+    <!-- <div id="wrapper">
+      <div id="container">
+  
+        <h1>Lorem ipsum dolor sit amet.</h1>
+        <p>Hover over text to pause.</p>
+  
+      </div>
+  </div> -->
+    <div class = 'welcome'>
+    <p>Welcome to <b><i>Gabby's Interactive Gallery 3</i></b></p>
+    </div>
+
+    <h5>Gabby Zhou's Artwork Blog</h5>
     
-    <h2>Interactive Gallery</h2>
-    <hr/>
-        <p>Here you can find interactive art-making inspirations</p> <!--p is a paragraph-->
-    <hr/>
-  	
+    <div class = "content">
+      <!-- credit: https://codepen.io/erinesullivan/pen/ZMreqJ?editors=1100 -->
+      <div class = "wrapper">
+        <h1>
+          <p>Thank you for visiting my virtual gallery!</p> <!--p is a paragraph-->
+          <p>Please use the form below to leave any feedback to my artwork</p>
+          <p>Share with me about your inspiration of making arts</p>
+        </h1>
+      <br>
+      <hr>
+      <br>
+      
+      </div>
+      
+      <form id="add-comment-form">
+        <input type="text" name="name" placeholder="Nickname">
+        <input type="number" name="index" placeholder="Artwork index">
+        <input type="number" name="rating" placeholder="Evaluate from 1-5">
+        <textarea name="comment" placeholder="Your critique"></textarea>
+        <button>Add Critique</button>
+      </form>
+
+      <!-- where we input data -->
+      <ul id="artworks"></ul>
+
+    </div>
+    
+    <div id="parent">
+      <div id="narrow">
+        <!-- <div class = "userComment"> -->
+          <h3>Critique Wall</h3>
+          <ul id="user-comments"></ul>
+        </div>
+    
+      <div id="wide">
+        <div class = "ranking">
+          <h3>Top 3 Artworks</h3>
+          <ul>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, repudiandae eligendi! Corporis quae quaerat beatae, pariatur fugit architecto ad eum magnam odio quibusdam fuga totam voluptatem sit atque magni asperiores.</li>
+          </ul>
+        </div>
+      </div>
+    </div>  
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-analytics.js"></script>
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyDtYTtLgTz3SDTXB4-qzZqa9z4Lhpl9S5o",
+        authDomain: "mstu5013-virtual-gallery.firebaseapp.com",
+        databaseURL: "https://mstu5013-virtual-gallery.firebaseio.com",
+        projectId: "mstu5013-virtual-gallery",
+        storageBucket: "mstu5013-virtual-gallery.appspot.com",
+        messagingSenderId: "696747492859",
+        appId: "1:696747492859:web:a77f0eb0c6b74aa22fb75e",
+        measurementId: "G-VWBYHBP46W"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      const db = firebase.firestore();
+      db.settings({ timestampsInSnapshots: true });
+      firebase.analytics();
+    </script>
+    </script>
   	<script src="Gallery3.js">
   	</script>
   </body>
