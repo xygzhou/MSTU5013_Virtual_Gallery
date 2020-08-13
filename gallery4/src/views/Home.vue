@@ -1,7 +1,7 @@
 <template>
     <b-container>
       <b-row align-v="center">
-        <art-card v-for="art in displayarts" :key="art.id" :name="art.name"></art-card>
+        <art-card v-for="art in displayarts" :key="art.id" :name="art.name" :medium="art.medium" :artist="art.artist" :year="art.year" :region="art.region" :link="art.link" :hyper="art.hyper"></art-card>
       </b-row>
       <b-pagination
       v-model="currentPage"
