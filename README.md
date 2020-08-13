@@ -19,32 +19,42 @@ This is a website dedicated to create an interactive experience for people who a
     
 
 * **Gallery 1 Multimedia & Resources**
-  * _**Spotify API
+  * _**Spotify API**_
   * _**Google Art and Culture | Art Palette**_ 
-    (credit: https://artsexperiments.withgoogle.com/artpalette/)
+
+   (credit: https://artsexperiments.withgoogle.com/artpalette/)
   * _**Art Style Transfer | Deep Learning**_
+
    (credit: https://yining1023.github.io/fast_style_transfer_in_ML5/)
 
 * **Gallery 2 User's stodyboard**
   * _**Login page**_
   * _**Authentication**_ 
+
     (not included in this project)
 
 * **Gallery 3 Gabby Zhou's Gallery**
   * _**Basic Vue component**_  
+
     Artworks display
   * _**FireBase**_ 
+
     Rendering data from user input in comment section
   * _**Data visualization**_
-    ** Generate top 3 artworks and display images from Firebase Storage
+
+    Generate top 3 artworks and display images from Firebase Storage
 
 * **Gallery 4 A Sample Storyboard**
   * _**Vue-Bootstrap**_
+
     -Card to pin art resource and captions
+
     -NavBar for navigation 
+
     -Pagination (Because there is no real backend server, a function in Vue component is used to display 3 artifacts in each page)
-  * _**Vue components**_ 
-    for rendering data from a json file
+  * _**Vue components**_
+
+    For rendering data from a json file
 
 ## Author
 ### _Gabby Zhou_
