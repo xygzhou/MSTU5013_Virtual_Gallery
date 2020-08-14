@@ -18,8 +18,9 @@ This is a website dedicated to create an interactive experience for people who a
     For Blind people and people with low vision, a button on this website can enable text-to-audio function to read the options and tabs out loud
     
 
-* **Gallery 1 Multimedia & Resources**
+* **Gallery 1 Multimedia & Resources (incomplete)**
   * _**Spotify API**_
+  * _**Artsy API**_
   * _**Google Art and Culture | Art Palette**_ 
 
    (credit: https://artsexperiments.withgoogle.com/artpalette/)
@@ -27,7 +28,7 @@ This is a website dedicated to create an interactive experience for people who a
 
    (credit: https://yining1023.github.io/fast_style_transfer_in_ML5/)
 
-* **Gallery 2 User's stodyboard**
+* **Gallery 2 User's stodyboard (incomplete)**
   * _**Login page**_
   * _**Authentication**_ 
 

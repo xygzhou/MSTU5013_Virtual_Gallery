@@ -1,33 +1,33 @@
 // heavy labor coding for firebase
-const artworks = document.querySelector('#artworks');
+// const artworks = document.querySelector('#artworks');
 const form = document.querySelector('#add-comment-form');
 const comments = document.querySelector('#user-comments');
 
 
-function renderArt(element) {
-    let li = document.createElement('li');
-    let artist = document.createElement('span');
-    let classification = document.createElement('span');
-    let medium = document.createElement('span');
-    let name = document.createElement('span');
-    let year = document.createElement('span');
-    let index = document.createElement('span');
+// function renderArt(element) {
+//     let li = document.createElement('li');
+//     let artist = document.createElement('span');
+//     let classification = document.createElement('span');
+//     let medium = document.createElement('span');
+//     let name = document.createElement('span');
+//     let year = document.createElement('span');
+//     let index = document.createElement('span');
 
-    li.setAttribute('data-id', element.id);
-    artist.textContent = 'Artist: ' + element.data().artist;
-    classification.textContent = 'Classification: ' + element.data().classification;
-    medium.textContent = 'Medium: ' + element.data().medium;
-    name.textContent = element.data().index + '. ' + element.data().name;
-    year.textContent = 'Year: ' +  element.data().year;
+//     li.setAttribute('data-id', element.id);
+//     artist.textContent = 'Artist: ' + element.data().artist;
+//     classification.textContent = 'Classification: ' + element.data().classification;
+//     medium.textContent = 'Medium: ' + element.data().medium;
+//     name.textContent = element.data().index + '. ' + element.data().name;
+//     year.textContent = 'Year: ' +  element.data().year;
 
-    li.appendChild(name);
-    li.appendChild(artist);
-    li.appendChild(classification);
-    li.appendChild(medium);
-    li.appendChild(year);
+//     li.appendChild(name);
+//     li.appendChild(artist);
+//     li.appendChild(classification);
+//     li.appendChild(medium);
+//     li.appendChild(year);
 
-    artworks.appendChild(li);
-}
+//     artworks.appendChild(li);
+// }
 
 function renderComment(element) {
     let li = document.createElement('li');

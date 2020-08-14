@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Product App</title>
+        <link rel="stylesheet" type="text/css" href="css/gallery3_style.css">
+
+    </head>
+
+    <body>
+
+        <div id="app">
+            <!-- <art-module :art="gz1"></art-module> -->
+            <ul>
+              <div class="art-info">
+                <li v-for="artwork in gz1" style="text-align: center;">
+                        <p><big>{{ artwork.index + ". Title: " + artwork.name }}</big></p>
+                        <p>{{"Classification: " + artwork.classification +
+                            " || Medium: " + artwork.medium }}
+                        <p>{{"Year: " + artwork.year}}</p>
+                    <img :src= "artwork.link" height= "200" alt="I hate coding">
+                </li> 
+              </div>
+              <div class="art-info">
+                <li v-for="artwork in gz2" style="text-align: center;">
+                        <p><big>{{ artwork.index + ". Title: " + artwork.name }}</big></p>
+                        <p>{{"Classification: " + artwork.classification +
+                            " || Medium: " + artwork.medium }}
+                        <p>{{"Year: " + artwork.year}}</p>
+                    <img :src= "artwork.link" height= "200" alt="I hate coding">
+                </li> 
+              </div>
+              <div class="art-info">
+                <li v-for="artwork in gz3" style="text-align: center;">
+                        <p><big>{{ artwork.index + ". Title: " + artwork.name }}</big></p>
+                        <p>{{"Classification: " + artwork.classification +
+                            " || Medium: " + artwork.medium }}
+                        <p>{{"Year: " + artwork.year}}</p>
+                    <img :src= "artwork.link" height= "200" alt="I hate coding">
+                </li> 
+              </div>
+              <div class="art-info">
+                <li v-for="artwork in gz4" style="text-align: center;">
+                        <p><big>{{ artwork.index + ". Title: " + artwork.name }}</big></p>
+                        <p>{{"Classification: " + artwork.classification +
+                            " || Medium: " + artwork.medium }}
+                        <p>{{"Year: " + artwork.year}}</p>
+                    <img :src= "artwork.link" height= "200" alt="I hate coding">
+                </li> 
+              </div>
+              <div class="art-info">
+                <li v-for="artwork in gz5" style="text-align: center;">
+                        <p><big>{{ artwork.index + ". Title: " + artwork.name }}</big></p>
+                        <p>{{"Classification: " + artwork.classification +
+                            " || Medium: " + artwork.medium }}
+                        <p>{{"Year: " + artwork.year}}</p>
+                    <img :src= "artwork.link" height= "200" alt="I hate coding">
+                </li> 
+              </div>
+              <div class="art-info">
+                <li v-for="artwork in gz6" style="text-align: center;">
+                        <p><big>{{ artwork.index + ". Title: " + artwork.name }}</big></p>
+                        <p>{{"Classification: " + artwork.classification +
+                            " || Medium: " + artwork.medium }}
+                        <p>{{"Year: " + artwork.year}}</p>
+                    <img :src= "artwork.link" height= "200" alt="I hate coding">
+                </li> 
+              </div>
+              <div class="art-info">
+                <li v-for="artwork in gz7" style="text-align: center;">
+                        <p><big>{{ artwork.index + ". Title: " + artwork.name }}</big></p>
+                        <p>{{"Classification: " + artwork.classification +
+                            " || Medium: " + artwork.medium }}
+                        <p>{{"Year: " + artwork.year}}</p>
+                    <img :src= "artwork.link" height= "200" alt="I hate coding">
+                </li> 
+              </div>
+              <div class="art-info">
+                <li v-for="artwork in gz8" style="text-align: center;">
+                        <p><big>{{ artwork.index + ". Title: " + artwork.name }}</big></p>
+                        <p>{{"Classification: " + artwork.classification +
+                            " || Medium: " + artwork.medium }}
+                        <p>{{"Year: " + artwork.year}}</p>
+                    <img :src= "artwork.link" height= "200" alt="I hate coding">
+                </li> 
+              </div>
+              <div class="art-info">
+                <li v-for="artwork in gz9" style="text-align: center;">
+                        <p><big>{{ artwork.index + ". Title: " + artwork.name }}</big></p>
+                        <p>{{"Classification: " + artwork.classification +
+                            " || Medium: " + artwork.medium }}
+                        <p>{{"Year: " + artwork.year}}</p>
+                    <img :src= "artwork.link" height= "200" alt="I hate coding">
+                </li> 
+              </div>
+              <div class="art-info">
+                <li v-for="artwork in gz10" style="text-align: center;">
+                        <p><big>{{ artwork.index + ". Title: " + artwork.name }}</big></p>
+                        <p>{{"Classification: " + artwork.classification +
+                            " || Medium: " + artwork.medium }}
+                        <p>{{"Year: " + artwork.year}}</p>
+                    <img :src= "artwork.link" height= "200" alt="I hate coding">
+                </li> 
+              </div>
+            </ul>    
+            <!-- <img :src="#"> -->
+        </div>
+          
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+           <script src="Gallery3vue.js"></script>
+    </body>
+</html>

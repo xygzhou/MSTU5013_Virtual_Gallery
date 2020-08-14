@@ -5,7 +5,7 @@
           <b-card
           :title = "name"
           :header = "'Medium: ' + medium"
-          :sub-title = "'Artis: ' + artist"
+          :sub-title = "'Artist: ' + artist"
           :img-src = "link"
           img-alt = "Job-info"
           img-top
