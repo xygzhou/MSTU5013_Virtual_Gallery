@@ -4,7 +4,7 @@ This is a website dedicated to create an interactive experience for people who a
 
 ## Rationale && Goals
 
-* **Accessibility: Index Page**
+* **Accessibility: Index Page (2/3)**
   * _**Color Contrast**_
     
     For people with color vision deficiency to access visual art resources, a button on this website can adjust the color contrast of texts and layouts. (Test on block area)
@@ -18,7 +18,7 @@ This is a website dedicated to create an interactive experience for people who a
     For Blind people and people with low vision, a button on this website can enable text-to-audio function to read the options and tabs out loud
     
 
-* **Gallery 1 Multimedia & Resources**
+* **Gallery 1 Multimedia & Resources (0.5/2)**
   * _**Spotify API (incomplete)**_
 
   Spotify: Get Recommendations
@@ -35,12 +35,12 @@ This is a website dedicated to create an interactive experience for people who a
 
    (credit: https://yining1023.github.io/fast_style_transfer_in_ML5/)
 
-* **Gallery 2 User's stodyboard**
+* **Gallery 2 User's stodyboard (1/2)**
   * _**Login page**_
   * _**Authentication (incomplete)**_ 
 
 
-* **Gallery 3 Gabby Zhou's Gallery**
+* **Gallery 3 Gabby Zhou's Gallery (2/3)**
   * _**Basic Vue component**_  
 
     Artworks display
@@ -51,7 +51,7 @@ This is a website dedicated to create an interactive experience for people who a
 
     Generate top 3 artworks and display images from Firebase Storage
 
-* **Gallery 4 A Sample Storyboard**
+* **Gallery 4 A Sample Storyboard (2/2 yay!)**
   * _**Vue-Bootstrap**_
 
     -Card to pin art resource and captions
