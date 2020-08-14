@@ -20,7 +20,14 @@ This is a website dedicated to create an interactive experience for people who a
 
 * **Gallery 1 Multimedia & Resources (incomplete)**
   * _**Spotify API**_
+
+  Spotify: Get Recommendations
+  Documentation: https://developer.spotify.com/documentation/web-api/reference/browse/get-recommendations/
+
   * _**Artsy API**_
+
+  Public Artsy API documentation: https://developers.artsy.net/v1/
+
   * _**Google Art and Culture | Art Palette**_ 
 
    (credit: https://artsexperiments.withgoogle.com/artpalette/)

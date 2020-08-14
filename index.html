@@ -22,16 +22,33 @@
 
 		<div class="box-2">
 			<h1>Assistive Buttons</h1>
-
+			<div id ="app">
 			<div class="block">
 				<h3>Color Contrast</h3>
-				<p>reserved space reserved space reserved space reserved space reserved space reserved space reserved space reserved space reserved space
-				</p>
+				<change-color></change-color>
+				<!-- <div  v-on:click="available = !available" v-bind:class="{available: available}">
+					<span>Click for black background + white text for stronger contrast.</span>
+				</div> -->
+				<!-- <div v-for="colcontrast in colcontrasts" :key="colcontrast.contrastID">
+					<a class=button v-on:click="updateColor(colcontrast.textColor)">Color Contrast Mode</a>
+					Black text + white background for stronger contrast.
+				</div> -->
+					<!-- <div id="app"> -->
+					<!-- <a class=button v-on:click="strongTxt()">Color Contrast Mode</a>
+
+					<p v-bind:style="{ color: changeTextColor }">
+					    class="highcontrastbg" -->
+						<!-- Black text + white background for stronger contrast.
+					</p> -->
+				
 			</div>
+				
 
 			<div class="block">
 				<h3>Font Adjustment</h3>
-				<div id="app">
+				<!-- <div id="app"> -->
+					<change-font></change-font>
+				<!-- <div>
 					<div id="body" v-bind:style="{ fontSize: computedFont }" ></div>
 					<a class="button" v-on:click="changeFontBigger()">
 						Increase font size
@@ -41,11 +58,11 @@
 						Decrease font size
 					</a>
 				  
-					<p v-bind:style="{ fontSize: fontSize + 'px' }">
+					<p v-bind:style="{ fontSize: computedFont }">
 						Font size is: {{ computedFont }}
 					</p>
+				</div> -->
 				</div>
-				</p>
 			</div>
 		
 			<!-- <div class="block">
