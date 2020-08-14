@@ -2,6 +2,7 @@
 // const artworks = document.querySelector('#artworks');
 const form = document.querySelector('#add-comment-form');
 const comments = document.querySelector('#user-comments');
+// const tops = document.querySelector('#top-three-arts');
 
 
 // function renderArt(element) {
@@ -54,6 +55,8 @@ function renderComment(element) {
 
     comments.appendChild(li);
 
+    
+
     // deleting data
     cross.addEventListener('click', (e) => {
         e.stopPropagation();
@@ -63,19 +66,68 @@ function renderComment(element) {
 }
 
 // getting artworks data
-db.collection('portfolio').orderBy('index').get().then((snapshot) => {
-    snapshot.docs.forEach(element => {
-        // console.log(element.data()) 
-        renderArt(element);
-    });
-})
-
-// getting comments data
-// db.collection('comments').orderBy('index').get().then((snapshot) => {
+// db.collection('portfolio').orderBy('index').get().then((snapshot) => {
 //     snapshot.docs.forEach(element => {
-//         renderComment(element);
+//         // console.log(element.data()) 
+//         renderArt(element);
 //     });
 // })
+
+// not working yet
+// function renderTops(element){
+//     let li = document.createElement('li');
+//     let index = document.createElement('span');
+//     let rating = document.createElement('span');
+
+//     li.setAttribute('data-id', element[0]);
+//     index.textContent = 'Index ' + element[0];
+//     rating.textContent = 'Average rating: ' + element[1];
+
+//     li.appendChild(index);
+//     li.appendChild(rating);
+
+//     tops.appendChild(li)
+
+// }
+
+// helper
+var myMap = {};
+function ratingCalc(ind, rat){
+    if (myMap.hasOwnProperty(ind)) {
+        // console.log(ind)
+        // console.log(Number(rat))
+        // console.log(Number(myMap[ind]))
+        temp = (Number(rat) + Number(myMap[ind])) / 2
+        // console.log("temp="+temp)
+        // 
+        str = temp.toString()
+        // console.log(str)
+        myMap[ind] = str 
+        // console.log("yay!")
+    }
+    else
+    myMap[ind] = rat
+    console.log("Here is the object array of the calculated ranking data:")
+    console.log(myMap)
+    // console.log()
+}
+
+var ranking = {}
+// getting top 3 comments data
+db.collection('comments').orderBy('index').get().then((snapshot) => {
+    snapshot.docs.forEach(element => {
+        let arr = [element.data().index, element.data().rating];
+        console.log(arr)
+        //  console.log("art" + arr[0])
+        ratingCalc("art"+ arr[0], arr[1])
+        // renderTops(ranking)
+        // renderTops(arr)
+        // renderComment(element)
+        // console.log(element.data()) return every trunk of information
+        // console.log(element.data().index) --get index and rating alternatively
+        // console.log(element.data().rating)
+    });
+})
 
 // saving data
 form.addEventListener('submit', (evt) => {
